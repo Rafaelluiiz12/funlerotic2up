@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+
+
+<head>
+    
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="../../../analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('D2L17OJC77UCRM9QLJD0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pagamento Recusado</title>
+  <style>
+    :root {
+      --red: #ef4444;
+      --dark-red: #b91c1c;
+      --text: #1e293b;
+      --bg: #ffffff;
+      --gray: #6b7280;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .card {
+      background: #fff;
+      box-shadow: 0 10px 25px var(--shadow);
+      border-radius: 16px;
+      padding: 40px 30px;
+      max-width: 380px;
+      width: 90%;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--red), var(--dark-red));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      box-shadow: 0 8px 16px rgba(239, 68, 68, 0.25);
+      animation: popIn 0.6s ease-out;
+    }
+
+    .icon span {
+      color: #fff;
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: var(--red);
+      font-size: 24px;
+      margin-bottom: 10px;
+      animation: slideDown 0.8s ease-out;
+    }
+
+    p {
+      color: var(--gray);
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.4;
+      animation: fadeIn 1s ease-out;
+    }
+
+    a.button {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--red), var(--dark-red));
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      animation: fadeUp 1s ease-out;
+    }
+
+    a.button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(239, 68, 68, 0.3);
+    }
+
+    .countdown {
+      margin-top: 16px;
+      color: var(--gray);
+      font-size: 14px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes popIn {
+      0% {transform: scale(0.6); opacity: 0;}
+      70% {transform: scale(1.1); opacity: 1;}
+      100% {transform: scale(1);}
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 30px 20px; }
+      h1 { font-size: 20px; }
+      p { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon"><span>×</span></div>
+    <h1>Pagamento Recusado</h1>
+    <p>O pagamento não foi aprovado. Para liberar o acesso ao conteúdo, realize novamente o pagamento no valor de <strong>R$ 14,90</strong>.</p>
+    <a href="https://ambienteseguro.org.ua/c/fdeff75446" class="button">Fazer Pagamento Agora</a>
+    <div class="countdown">Qualquer valor enviado será extornado em menos de 24 horas.</div>
+  </div>
+
+  <script>
+    let seconds = 28;
+    const redirectUrl = 'https://ambienteseguro.org.ua/c/fdeff75446';
+
+    setTimeout(() => {
+      window.location.href = redirectUrl;
+    }, seconds * 1000);
+  </script>
+</body>
+
+
+</html>
